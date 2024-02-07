@@ -35,7 +35,7 @@
             removeButton.addEventListener("click", () => {
                 removeTask(index);
             });
-        });
+        }); 
 
         const toggleDoneButtons = document.querySelectorAll(".js-done");
 
