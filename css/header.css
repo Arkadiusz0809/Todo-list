@@ -1,6 +1,10 @@
 .header{
     font-weight: bold;
     max-width: 700px;
-    margin: 20px auto;
 }
 
+@media(max-width: 767px) {
+    .header{
+        text-align: center;
+    }
+}

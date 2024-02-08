@@ -1,26 +1,6 @@
 .container{
-    max-width: 700px;
-    background-color: white;
-    margin: auto;
-}
-
-.container__header{
-    border-bottom: 1px solid #ccc;
+    max-width: 900px;
     padding: 20px;
-    font-weight: bold;
-}
-
-.container__tasks{
-    display: grid;
-    grid-gap: 10px;
-    padding: 10px;
-}
-
-.list{
-    display: grid;
-    border-bottom: 1px solid #ccc;
-    grid-template-columns: 100px 1fr 50px;
-    grid-gap: 10px;
-
-   
+    margin: 0 auto;
+    overflow-wrap: anywhere;
 }

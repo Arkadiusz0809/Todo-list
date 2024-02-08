@@ -1,0 +1,54 @@
+.tasks{
+    padding: 0px;
+    margin: 0;
+    list-style: none;
+}
+
+.tasks__item{
+    display: grid;
+    border-bottom: 1px solid #ddd;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 10px;
+    padding: 10px;
+    display: grid;
+    align-items: center;
+}
+
+.tasks__content--done{
+    text-decoration: line-through;
+}
+
+.tasks__button{
+    border: none;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    display: grid;
+    align-items: center;
+}
+
+.tasks__button--toggleDone{
+    background-color: hsl(120, 100%, 35%);
+    color: white;
+}
+
+.tasks__button--toggleDone:hover{
+    background-color: hsl(120, 100%, 40%);
+}
+
+.tasks__button--toggleDone:active{
+    background-color: hsl(120, 100%, 45%);
+}
+
+.tasks__button--remove{
+    background-color: hsl(0, 100%, 45%);
+}
+
+.tasks__button--remove:hover{
+    background-color: hsl(0, 100%, 50%);
+}
+
+.tasks__button--remove:active{
+    background-color: hsl(0, 100%, 54%)
+}
+    
