@@ -9,23 +9,28 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="script.js"></script>
     <link href="css/style.css" rel="stylesheet">
-    <link href="css.css" rel="stylesheet">
+    <link href="css/container.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+
 
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap" rel="stylesheet">
 
 </head>
 <body class="body">
+        <h1 >Lista zadań</h1>
     <div class="container">
-        <h1>Lista zadań</h1>
-    <div>
-        <h2>Dodaj nowe zadanie</h2>
-        <form class="js-form">
-            <input class="js-newTask">
-            <button>Dodaj zadanie</button>
+        <h2 class="header">Dodaj nowe zadanie</h2>
+        <form class="form js-form">
+            <input class="form__input js-newTask" placeholder="Co jest do zrobienia ?" autofocus>
+            <button class="form__button">Dodaj zadanie</button>
         </form>
     </div>
-    </div>
+        <div>
+            <h2 class="header">Lista zadań</h2>
+            <ul class="js-tasks"></ul>
+        </div>
+    
 
-    <ul class="js-tasks"></ul>
 </body>
 </html>
