@@ -94,6 +94,7 @@
             buttonsElement.innerHTML = "";
             return;
         }
+        
         buttonsElement.innerHTML = `
             <h2 class="task__header">Lista zadań</h2>
                 <button class="js-toggleHideDoneTasks task__buttonHide">
