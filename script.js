@@ -1,9 +1,11 @@
 {
     let tasks = [
-        { content: "buy butter",
-        done: false,
-    }
+        {
+            content: "buy butter",
+            done: false,
+        }
     ];
+    
     let hideDoneTasks = false;
 
     const addNewTask = (newTaskContent) => {
@@ -94,7 +96,7 @@
             buttonsElement.innerHTML = "";
             return;
         }
-        
+
         buttonsElement.innerHTML = `
             <h2 class="task__header">Lista zadań</h2>
                 <button class="js-toggleHideDoneTasks task__buttonHide">
