@@ -111,8 +111,8 @@
 
     const bindButtonsEvents = () => {
 
-        const toggleHideDoneTasksButton = document.querySelector("js-toggleHideDoneTasks");
-        const markAllDoneButton = document.querySelector("js-markAllDone");
+        const toggleHideDoneTasksButton = document.querySelector(".js-toggleHideDoneTasks");
+        const markAllDoneButton = document.querySelector(".js-markAllDone");
 
         if (markAllDoneButton) {
             markAllDoneButton.addEventListener("click", markAllTasksDone);
