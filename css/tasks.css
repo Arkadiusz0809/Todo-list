@@ -23,7 +23,7 @@
     border: none;
     color: teal;
     margin: 0 0 0 20px;
-    transition: color 0.3s
+    transition: color 0.3s;
 }
 
 .task__buttonComplete{
@@ -31,7 +31,21 @@
     border: none;
     color: teal;
     margin: 0 0 0 20px;
-    transition: color 0.3s
+    transition: color 0.3s;
+}
+
+@media(max-width:767px){
+    .task__buttonComplete{
+        flex-basis: 100%;
+        margin : 10px;
+    }
+}
+
+@media(max-width:767px){
+    .task__buttonHide{
+        flex-basis: 100%;
+        margin : 10px;
+    }
 }
 
 .task__buttonComplete:disabled {

@@ -17,22 +17,12 @@
     };
 
     const removeTask = (taskIndex) => {
-        tasks = [
-            ...tasks.slice(0, taskIndex),
-            ...tasks.slice(taskIndex + 1),
-        ];
+        tasks = tasks.filter((task, index) => index != taskIndex);
         render();
     };
 
     const toggleTaskDone = (taskIndex) => {
-        tasks = [
-            ...tasks.slice(0, taskIndex),
-            {
-                ...tasks[taskIndex],
-                done: !tasks[taskIndex].done,
-            },
-            ...tasks.slice(taskIndex + 1)
-        ],
+        tasks = tasks.map((task, index) => taskIndex === index ? {...task, done: !task.done } : task);
             render();
     };
 
@@ -98,7 +88,6 @@
         }
 
         buttonsElement.innerHTML = `
-            <h2 class="task__header">Lista zadań</h2>
                 <button class="js-toggleHideDoneTasks task__buttonHide">
                     ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
                 </button>

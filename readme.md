@@ -14,6 +14,9 @@ Tools used:
 - HTML
 - JS [ ECMAScript 6]
 - CSS
-- BEM
+- BEM convention
 - Grid
 - Flex
+- Normalize.css
+- Media queries
+- Markdown language

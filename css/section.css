@@ -1,32 +1,31 @@
 .section{
-    background-color: white;
     margin: 10px 0;
+    background: white;
     box-shadow: 0 0 5px #ddd;
-}
-
-.section__buttons{
-    display: grid;
-    grid-template-columns: 1fr auto auto;
-    padding-right: 10px;
-    border-bottom: 2px solid #eee;
-}
-
-@media(max-width: 767px){
-    .section__buttons{
-        grid-template-columns: 1fr;
-        grid-gap: 15px;
-        padding-bottom: 15px;
-    }
 }
 
 .section__header{
     border-bottom: 1px solid #ddd;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
-    font-weight: bold;
+}
+
+@media(max-width: 767px) {
+    .section__header{
+        grid-template-columns: 1fr;
+    }
+}
+
+.section__title {
+    font-size : 20px;
     margin: 0;
 }
 
-.section__body{
+.section__body {
     padding: 20px;
 }
 

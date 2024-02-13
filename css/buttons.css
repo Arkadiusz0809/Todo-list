@@ -1,0 +1,15 @@
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media(max-width : 767px) {
+    .buttons {
+        flex-basis: 100%;
+        margin : 10px;
+
+    }
+}
+
+
+
