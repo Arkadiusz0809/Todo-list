@@ -4,6 +4,20 @@
     box-shadow: 0 0 5px #ddd;
 }
 
+.section__buttons{
+    display: grid;
+    grid-template-columns: 1fr auto auto ;
+    grid-gap: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+@media(max-width: 767px){
+    .section__buttons{
+        grid-template-columns: 1fr;
+        padding-bottom: 10px;
+    }
+}
+
 .section__header{
     border-bottom: 1px solid #ddd;
     padding: 20px;
@@ -14,3 +28,4 @@
 .section__body{
     padding: 20px;
 }
+
