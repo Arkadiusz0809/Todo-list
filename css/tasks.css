@@ -22,13 +22,20 @@
     background-color: white;
     border: none;
     color: teal;
+    margin: 0 0 0 20px;
+    transition: color 0.3s
 }
 
 .task__buttonComplete{
     background-color: white;
     border: none;
     color: teal;
-    margin-right: 10px;
+    margin: 0 0 0 20px;
+    transition: color 0.3s
+}
+
+.task__buttonComplete:disabled {
+    color: #ccc;
 }
 
 .tasks__button{
@@ -38,6 +45,7 @@
     padding: 0;
     display: grid;
     align-items: center;
+    transition: background 0.3s;
 }
 
 .task__header{
@@ -77,5 +85,9 @@
 
 .task__buttonComplete:hover{
     color: hsl(180, 100%, 35%);
+}
+
+.tasks__item--hidden {
+    display: none;
 }
 

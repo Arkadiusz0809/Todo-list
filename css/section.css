@@ -6,15 +6,16 @@
 
 .section__buttons{
     display: grid;
-    grid-template-columns: 1fr auto auto ;
-    grid-gap: 20px;
-    border-bottom: 1px solid #ddd;
+    grid-template-columns: 1fr auto auto;
+    padding-right: 10px;
+    border-bottom: 2px solid #eee;
 }
 
 @media(max-width: 767px){
     .section__buttons{
         grid-template-columns: 1fr;
-        padding-bottom: 10px;
+        grid-gap: 15px;
+        padding-bottom: 15px;
     }
 }
 
